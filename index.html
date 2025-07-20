@@ -7,49 +7,50 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
-      background-color: #1e1e1e;
+      background-color: #2c2c2c;
       color: #f1f1f1;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    h2 {
-      color: #ffffff;
-      margin-bottom: 30px;
-    }
-
     .accordion-button {
-      background-color: #2a2a2a;
-      color: #f1f1f1;
+      background-color: #3a3a3a;
+      color: #fff;
     }
 
     .accordion-button:not(.collapsed) {
-      background-color: #333333;
-      color: #ffffff;
+      background-color: #4a4a4a;
     }
 
     .accordion-body {
-      background-color: #2a2a2a;
-      color: #e0e0e0;
+      background-color: #3a3a3a;
+      color: #ddd;
     }
 
-    .accordion-item {
-      border: 1px solid #444;
-      border-radius: 8px;
-      margin-bottom: 12px;
+    .accordion-button:focus {
+      box-shadow: none;
+    }
+
+    h2 {
+      color: #ffffff;
+    }
+
+    .container {
+      padding-top: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="container my-5">
+  <div class="container my-4">
     <h2>💡 Green Tech Hub — FAQs</h2>
     <div class="accordion" id="faqAccordion">
+
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
             How long does solar panel installation take?
           </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
             Typically, installation takes 1 to 3 days depending on system size and complexity.
           </div>
@@ -58,11 +59,11 @@
 
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
             How much will solar panels save me on my electricity bill?
           </button>
         </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
             Savings vary based on your energy usage and system size, but customers often reduce bills by 50% or more.
           </div>
@@ -71,109 +72,71 @@
 
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Do solar panels work in cloudy weather?
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Are there government incentives for solar panels?
           </button>
         </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Yes, solar panels still generate electricity on cloudy days, though at reduced efficiency.
+            Yes, various rebates and tax credits may be available depending on your location. We help you claim them.
           </div>
         </div>
       </div>
 
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            Is there a warranty on solar panels?
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            Do solar panels work on cloudy days?
           </button>
         </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Most panels come with a 25-year performance warranty and a 10-12 year product warranty.
+            Yes, though energy output is lower than on sunny days, panels still generate electricity when it’s overcast.
           </div>
         </div>
       </div>
 
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            Do I need planning permission for solar panels?
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+            Can I store excess solar energy?
           </button>
         </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            In most cases, no. But some areas or listed buildings may require permission.
+            Absolutely! We offer battery storage systems so you can store and use solar energy anytime, even at night.
           </div>
         </div>
       </div>
 
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingSix">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-            Can solar panels power my entire home?
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+            What maintenance is required?
           </button>
         </h2>
-        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Yes, with proper sizing and possibly a battery system, solar can cover 100% of your needs.
+            Very little. We recommend a yearly inspection and occasional cleaning for peak performance.
           </div>
         </div>
       </div>
 
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingSeven">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-            How much does solar panel installation cost?
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+            What is the lifespan of solar panels?
           </button>
         </h2>
-        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            It varies, but most residential systems range from £4,000 to £8,000 before incentives.
+            Most solar panels last 25–30 years with efficiency gradually reducing after 20 years.
           </div>
         </div>
       </div>
 
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingEight">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-            What maintenance do solar panels require?
-          </button>
-        </h2>
-        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Minimal maintenance — usually just occasional cleaning and annual system checks.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingNine">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-            Can I store excess solar energy?
-          </button>
-        </h2>
-        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Yes, with a battery system, you can store extra energy for use at night or during outages.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTen">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-            Will I still receive an electricity bill?
-          </button>
-        </h2>
-        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            If you stay connected to the grid, yes — but the bill will be significantly lower or even zero.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+            Will solar increase my home’s value?
+          </but
